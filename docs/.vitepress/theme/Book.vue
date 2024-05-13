@@ -12,6 +12,9 @@ const { frontmatter: data } = useData()
         >
           {{ data.title }}
         </h1>
+        <h2 v-if="data.subtitle" class="text-xl leading-9 font-extrabold text-gray-700 dark:text-gray-500 tracking-tight sm:text-2xl sm:leading-10 md:text-3xl md:leading-14">
+            {{ data.subtitle }}
+        </h2>
       </header>
   
       <div
